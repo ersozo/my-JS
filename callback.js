@@ -1,4 +1,7 @@
-// işlem sırasını değiştirmek için callback fonksiyonu yapısını kullanırız.
+// when we don't apply callback function, new person is not added to people array because
+// people already loaded on page. After we put getPerson function into createPerson function
+// as a parameter (we call it as callback function) then new person is added to people array after
+// 6 seconds and after 2 seconds from then they are rendered on the page (totally 8 seconds)
 
 const people = [
   { name: "John", age: 35 },
